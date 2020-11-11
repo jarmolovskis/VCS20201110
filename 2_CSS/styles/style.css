@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: orange;
+    background-color: purple;
+    font-size: 40px;
+    font-family: 'Goldman', cursive;
+    text-align: center;
+}
+
+.mano-paragrafas {
+    color: #303096;
+    font-weight: bold;
+    font-style: oblique 15deg;
+    border: 3px solid black;
+    padding: 20px;
+}
+
+p {
+    background-color: rgb(226, 226, 226);
+}
+
+a {
+    background-color: yellow;
+}
+
+.galerija {
+    background-color: rgb(224, 224, 235);
+    padding: 50px;
+    width: 100%;
+}
+
+div.galerija img {
+    /* border: 5px solid grey; */
+    padding: 15px;
+    margin-left: 15px;
+    background-color: white;
+    box-shadow: grey 5px 5px 10px;
+}
