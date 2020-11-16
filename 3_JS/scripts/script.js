@@ -14,7 +14,22 @@ var masyvas = ["Vardas", 23, true, null];
 // masyvas.shift();
 masyvas.unshift(50);
 
+
+
 // Klausimas: Kaip pasalinti konkretu elementa?
+
+const array = [2, 5, 9];
+
+console.log(array);
+
+const index = array.indexOf(5);
+if (index > -1) {
+  array.splice(index, 1);
+}
+
+// array = [2, 9]
+console.log(array);
+
 
 console.log(masyvas);
 // console.log(masyvas.length);
@@ -57,3 +72,21 @@ button1.addEventListener("click", function() {
 document.addEventListener("keyup", function(event) {
     console.log(event.key);
 });
+
+
+var button2 = document.querySelector("#change-img");
+var i = 0;
+button2.addEventListener("click", function() {
+
+    var image = document.querySelector("div.gallery img");
+    image.setAttribute("src", "https://picsum.photos/seed/" + Math.random() + "/150");
+});
+
+
+var images = document.querySelectorAll("div.gallery img");
+
+for (var j = 0; j < images.length; j++) {
+    images[j].addEventListener("click", function(event) {
+        event.target.setAttribute("src", "https://picsum.photos/seed/" + Math.random() + "/150");
+    });
+}
