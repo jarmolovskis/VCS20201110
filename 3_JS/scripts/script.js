@@ -34,8 +34,6 @@ var profile = {
 profile.changeName("Tadas");
 console.log(profile.fullName());
 
-
-
 var paragraph = document.createElement("p");
 paragraph.innerText = "Tekstas idetas i elementa su JS."
 
